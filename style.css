@@ -1,0 +1,178 @@
+
+/* Nav */
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+       body{
+         font-family: "New Amsterdam",sans-serif;
+         font-size: 20px;
+         
+       }
+.navbar{
+    background-color: rgba(240, 248, 255, 0.836);
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+ }
+
+.navbar-brand{
+    font-weight: 500;
+    color: rgb(32, 138, 0);
+    font-size: 24px;
+    transition: 0.9s color;
+}
+
+.login-button{
+    background-color: rgb(51, 177, 93);
+    color: white;
+    font-size: 19px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover{
+    background-color: rgb(176, 238, 174) ;
+}
+
+.navbar-toggler{
+    border:none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color: #000000f1;
+    font-style: 500 ;
+    position: relative;
+    
+}
+
+.nav-link:hover, .nav-link.active{
+    color: rgb(104, 161, 114);
+}
+
+/* ketika kelebaran layar di bawah 991px codingan dibawah tidak berlaku */
+@media (min-width: 991px)
+{
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) ;
+        width: 0;
+        height: 2px;
+        background-color: rgb(63, 163, 17);
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+/* isi home */
+
+.hero-selection{
+    background: url(img/bg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+
+/* sistem login */
+
+.log-con {
+    text-align: center; 
+    
+    position: relative;
+    top: 170px;
+}
+
+
+.in-con{
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.log-con h1 {
+   margin-left: 13px;
+   color: #337917;
+}
+
+
+.in-con input {
+    border: none;
+    border-radius: 50px;
+    padding: 15px 20px;
+    width: 300px;
+    font-size: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.log-ton {
+    background-color: white;
+    color: #0cbd1b;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 20px;
+    width: 150px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    
+    
+    
+}
+.button {
+   
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 60%;
+    background-color: whitesmoke;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+.log-ton:hover {
+    background-color: #22cc9d;
+    transition: 0.5s ease-in-out;
+    
+}
+
+/* contac */
+
+
+
+
+
+.isi-contact .logo{
+
+    width: 150px;  
+
+}
+
+.logo-contact{
+    text-decoration: none;
+    margin: 30px;
+    font-size: 20px;
+    color: rgb(43, 43, 43);
+}
+
+
+
+
